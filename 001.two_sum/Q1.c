@@ -43,16 +43,14 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     IntIntHash *hash_table = NULL;
     
     for(int i = 0; i < numsSize; ++i) {
-        addItem(&hash_table, nums[i], i);
-    }
-    
-    for(int i = 0; i < numsSize; ++i) {
-        IntIntHash *item = findItem(&hash_table, target - nums[i]);
-        if(item && item->value != i) {
-            ans[0] = i;
-            ans[1] = item->value;
+        int complement = target - nums[i];
+        IntIntHash *item = findItem(&hash_table, complement);
+        if(item) {  // item == NULL if complement was not found
+            ans[0] = item->value;
+            ans[1] = i;
             break;
         }
+        addItem(&hash_table, nums[i], i);
     }
     
     // free the hash table
