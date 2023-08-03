@@ -23,31 +23,31 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
             ++i;
         }
         int j = i + 1;
-        int l = numsSize - 1;
-        while(j < l) {
+        int k = numsSize - 1;
+        while(j < k) {
             int target = -nums[i];
-            int sum = nums[j] + nums[l];
-            if(sum < target) {
-                ++j;
-            }
-            else if(sum > target) {
-                --l;
-            }
-            else {
+            int sum = nums[j] + nums[k];
+            if(sum == target) {
                 ans[count] = (int *)malloc(3 * sizeof(int));
                 ans[count][0] = nums[i];
                 ans[count][1] = nums[j];
-                ans[count][2] = nums[l];
+                ans[count][2] = nums[k];
                 ++count;
                 ++j;
-                --l;
+                --k;
 
-                while(j - 1 != i && j < l && nums[j] == nums[j - 1]) {
+                while(j - 1 != i && j < k && nums[j] == nums[j - 1]) {
                     ++j;
                 }
-                while(l < numsSize - 1 && j < l && nums[l] == nums[l + 1]) {
-                    --l;
+                while(k < numsSize - 1 && j < k && nums[k] == nums[k + 1]) {
+                    --k;
                 }
+            }
+            if(sum < target) {
+                ++j;
+            }
+            if(sum > target) {
+                --k;
             }
         }
     }
