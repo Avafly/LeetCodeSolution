@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <memory>
 using namespace std;
 
 struct TreeNode {
@@ -12,24 +13,14 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-TreeNode *insertNode(TreeNode *root, int &val) {
-    if(root == nullptr) {
-        return new TreeNode(val);
-    }
-    if(val < root->val) {
-        root->left = insertNode(root->left, val);
-    } else {
-        root->right = insertNode(root->right, val);
-    }
-    return root;
-}
-
-int getHeight(TreeNode *node) {
-    if (node == nullptr) {
-        return 0;
-    }
-    return max(getHeight(node->left), getHeight(node->right)) + 1;
-}
+struct sTreeNode {
+    int val;
+    shared_ptr<sTreeNode> left;
+    shared_ptr<sTreeNode> right;
+    sTreeNode() : val(0), left(nullptr), right(nullptr) {}
+    sTreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    sTreeNode(int x, shared_ptr<sTreeNode> left, shared_ptr<sTreeNode> right) : val(x), left(left), right(right) {}
+};
 
 void printTree(TreeNode *root) {
     if(root == nullptr) return;
@@ -63,6 +54,16 @@ void clearTree(TreeNode *root) {
     root = nullptr;
 }
 
+TreeNode *copyTree(const shared_ptr<sTreeNode> &root) {
+    if (!root) {
+        return nullptr;
+    }
+    TreeNode *node = new TreeNode(root->val);
+    node->left = copyTree(root->left);
+    node->right = copyTree(root->right);
+    return node;
+}
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -77,24 +78,36 @@ void clearTree(TreeNode *root) {
 class Solution {
 public:
     vector<TreeNode*> generateTrees(int n) {
-        return rec(1, n);
+        return rec(n);
     }
+
 private:
-    vector<TreeNode *> rec(int start, int end) {
-        vector<TreeNode *> ans;
+    vector<TreeNode *> rec(int n) {
+        vector<shared_ptr<sTreeNode>> sans = srec(1, n);
+        vector<TreeNode*> ans;
+        // copy tree
+        for(auto &tree : sans) {
+            ans.push_back(copyTree(tree));
+        }
+
+        return ans;
+    }
+
+    vector<shared_ptr<sTreeNode>> srec(int start, int end) {
+        vector<shared_ptr<sTreeNode>> ans;
         if(start > end) {
             ans.push_back(nullptr);
             return ans;
         }
 
         for(int i = start; i <= end; ++i) {
-            vector<TreeNode *> leftTrees = rec(start, i - 1);
-            vector<TreeNode *> rightTrees = rec(i + 1, end);
+            vector<shared_ptr<sTreeNode>> leftTrees = srec(start, i - 1);
+            vector<shared_ptr<sTreeNode>> rightTrees = srec(i + 1, end);
 
             // add an unique tree
             for(int p = 0; p < leftTrees.size(); ++p) {
                 for(int q = 0; q < rightTrees.size(); ++q) {
-                    TreeNode *root = new TreeNode(i);
+                    shared_ptr<sTreeNode> root = make_shared<sTreeNode>(i);
                     root->left = leftTrees[p];
                     root->right = rightTrees[q];
                     ans.push_back(root);
@@ -107,17 +120,20 @@ private:
 };
 
 int main(int argc, char **argv) {
-    int n = 4;
+    int n = 8;
     Solution sol;
     vector<TreeNode *> ans = sol.generateTrees(n);
     cout << ans.size() << endl;
-    for(TreeNode *root : ans) {
-        printTree(root);
-        cout << "----------" << endl;
-    }
+    // print tree
 //    for(TreeNode *root : ans) {
-//        clearTree(root);
+//        printTree(root);
+//        cout << "----------" << endl;
 //    }
+    
+    // clear memory
+    for(TreeNode *root : ans) {
+        clearTree(root);
+    }
     
     return 0;
 }
