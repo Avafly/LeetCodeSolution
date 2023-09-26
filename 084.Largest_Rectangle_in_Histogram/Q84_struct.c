@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Largest Rectangle in Histogram
+// URL: https://leetcode.com/problems/largest-rectangle-in-histogram/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -45,7 +50,7 @@ int top(STACK *stack) {
     return stack->data;
 }
 
-int largestRectangleArea(int* heights, int heightsSize){
+int largestRectangleArea(int *heights, int heightsSize){
     int ans = 0;
     STACK *monoStack = NULL;
     

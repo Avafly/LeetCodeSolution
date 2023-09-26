@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Permutations II
+// URL: https://leetcode.com/problems/permutations-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,7 +47,7 @@ void rec(int **ans, int *nums, int start, int *count, int n) {
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** permuteUnique(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){
+int **permuteUnique(int *nums, int numsSize, int *returnSize, int **returnColumnSizes){
     *returnSize = 0;
     int **ans = (int **)malloc(sizeof(int *) * SIZE);
     int *count = (int *)calloc(1, sizeof(int));

@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Longest Substring Without Repeating Characters
+// URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
 #include <stdio.h>
 #include <string.h>
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge Two Sorted Lists
+// URL: https://leetcode.com/problems/merge-two-sorted-lists/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -74,7 +79,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2){
                 list2 = list2->next;
             }
         }
-        else if (list1!=NULL && list2==NULL) {
+        else if(list1!=NULL && list2==NULL) {
             if(ans == NULL) {
                 ans = (struct ListNode*)malloc(sizeof(struct ListNode));
                 p = ans;
@@ -87,7 +92,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2){
             p->val = list1->val;
             list1 = list1->next;
         }
-        else if (list1==NULL && list2!=NULL) {
+        else if(list1==NULL && list2!=NULL) {
             if(ans == NULL) {
                 ans = (struct ListNode*)malloc(sizeof(struct ListNode));
                 p = ans;

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Longest Valid Parentheses
+// URL: https://leetcode.com/problems/longest-valid-parentheses/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -10,7 +15,7 @@ public:
         int left = -1;
         int ans = 0;
         vector<int> stack;
-        for(int i=0; i<s.length(); ++i) {
+        for(int i = 0; i < s.length(); ++i) {
             if(s[i] == '(') {
                 stack.push_back(i);
             }
@@ -21,10 +26,10 @@ public:
                 else {
                     stack.pop_back();
                     if(stack.size() == 0) {
-                        ans = max(ans, i-left);
+                        ans = max(ans, i - left);
                     }
                     else {
-                        ans = max(ans, i-stack.back());
+                        ans = max(ans, i - stack.back());
                     }
                 }
             }

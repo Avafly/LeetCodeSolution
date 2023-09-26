@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Recover Binary Search Tree
+// URL: https://leetcode.com/problems/recover-binary-search-tree/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -57,7 +62,7 @@ void inorder(struct TreeNode *node, struct TreeNode **firs, struct TreeNode **se
  *     struct TreeNode *right;
  * };
  */
-void recoverTree(struct TreeNode* root){
+void recoverTree(struct TreeNode *root){
     struct TreeNode *firs = NULL;
     struct TreeNode *seco = NULL;
     struct TreeNode *prev = NULL;

@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: String to Integer (atoi)
+// URL: https://leetcode.com/problems/string-to-integer-atoi/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

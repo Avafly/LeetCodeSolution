@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Element
+// URL: https://leetcode.com/problems/remove-element/
+
 #include <iostream>
 #include <vector>
 
@@ -5,10 +10,10 @@ using namespace std;
 
 class Solution {
 public:
-    int removeElement(vector<int>& nums, int val) {
+    int removeElement(vector<int> &nums, int val) {
         int count = 0;
 
-        for(int i=0; i<nums.size(); ++i) {
+        for(int i = 0; i < nums.size(); ++i) {
             if(nums[i] != val) {
                 nums[count++] = nums[i];
             }
@@ -20,7 +25,7 @@ public:
 int main() {
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
 
-    for(int i=0; i<nums.size(); ++i) {
+    for(int i = 0; i < nums.size(); ++i) {
         cout << nums[i] << " ";
     }
     cout << endl;
@@ -30,7 +35,7 @@ int main() {
     int val = 2;
     int len = sol.removeElement(nums, val);
 
-    for(int i=0; i<len; ++i) {
+    for(int i = 0; i < len; ++i) {
         cout << nums[i] << " ";
     }
     cout << endl;

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Spiral Matrix II
+// URL: https://leetcode.com/problems/spiral-matrix-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,7 +11,7 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** generateMatrix(int n, int* returnSize, int** returnColumnSizes){
+int **generateMatrix(int n, int *returnSize, int **returnColumnSizes){
     *returnSize = n;
     *returnColumnSizes = (int *)malloc(sizeof(int) * (*returnSize));
     int **matrix = (int **)malloc(sizeof(int *) * (*returnSize));

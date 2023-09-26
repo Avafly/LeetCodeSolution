@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Binary Tree Inorder Traversal
+// URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -28,7 +33,7 @@ void rec(struct TreeNode *root, int *ans, int *returnSize) {
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int* inorderTraversal(struct TreeNode* root, int* returnSize){
+int *inorderTraversal(struct TreeNode *root, int *returnSize){
     int *ans = (int *)calloc(100, sizeof(int));
     *returnSize = 0;
     rec(root, ans, returnSize);

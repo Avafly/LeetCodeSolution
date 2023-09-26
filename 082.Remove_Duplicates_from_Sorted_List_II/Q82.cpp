@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted List II
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -58,7 +63,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
+    ListNode *deleteDuplicates(ListNode *head) {
         if(!head || !head->next) {
             return head;
         }

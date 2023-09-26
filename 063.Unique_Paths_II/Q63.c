@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Unique Paths II
+// URL: https://leetcode.com/problems/unique-paths-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +17,7 @@
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
-int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridSize, int* obstacleGridColSize){
+int uniquePathsWithObstacles(int **obstacleGrid, int obstacleGridSize, int *obstacleGridColSize){
     int m = obstacleGridSize;
     int n = obstacleGridColSize[0];
 
@@ -88,11 +93,6 @@ int main(int argc, char **argv) {
             obstacleGrid[i][j] = grid[i][j];
         }
     }
-
-    // print obstacleGrid
-    // for(int i = 0; i < obstacleGridSize; ++i) {
-    //     printf("%d %d\n", obstacleGrid[i][0], obstacleGrid[i][1]);
-    // }
 
     printf("%d\n", uniquePathsWithObstacles(obstacleGrid, obstacleGridSize, obstacleGridColSize));
 

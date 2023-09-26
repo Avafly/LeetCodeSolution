@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Swap Nodes in Pairs
+// URL: https://leetcode.com/problems/swap-nodes-in-pairs/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,8 +11,8 @@ struct ListNode {
     struct ListNode *next;
 };
 
-void print_LinkedList(struct ListNode* l) {
-    struct ListNode* p = NULL;
+void print_LinkedList(struct ListNode *l) {
+    struct ListNode *p = NULL;
 
     while (l!=NULL) {
         p = l;
@@ -18,8 +23,8 @@ void print_LinkedList(struct ListNode* l) {
     printf("\n");
 }
 
-void free_LinkedList(struct ListNode* l) {
-    struct ListNode* p = NULL;
+void free_LinkedList(struct ListNode *l) {
+    struct ListNode *p = NULL;
 
     while (l!=NULL) {
         p = l;
@@ -29,7 +34,7 @@ void free_LinkedList(struct ListNode* l) {
     }
 }
 
-struct ListNode* swapPairs(struct ListNode* head){
+struct ListNode *swapPairs(struct ListNode *head){
     int even = 0;
     int isFirst = 1;
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Word Search
+// URL: https://leetcode.com/problems/word-search/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -8,7 +13,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool exist(vector<vector<char>>& board, string word) {
+    bool exist(vector<vector<char>> &board, string word) {
         int height = static_cast<int>(board.size()), width = static_cast<int>(board[0].size());
         if(word.size() > height * width)    return false;
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Same Tree
+// URL: https://leetcode.com/problems/same-tree/
+
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -35,7 +40,7 @@ void clearTree(TreeNode *root) {
  */
 class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) {
+    bool isSameTree(TreeNode *p, TreeNode *q) {
         if(p == nullptr || q == nullptr) {
             return p == nullptr && q == nullptr;
         }

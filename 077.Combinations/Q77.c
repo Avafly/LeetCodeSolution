@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Combinations
+// URL: https://leetcode.com/problems/combinations/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -35,7 +40,7 @@ void rec(int **ans, int *ansSize, int *nums, int *numsSize, int n, int k, int st
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** combine(int n, int k, int* returnSize, int** returnColumnSizes){
+int **combine(int n, int k, int *returnSize, int **returnColumnSizes){
     *returnSize = (int)combinationSize(n, k);
     *returnColumnSizes = (int *)calloc(*returnSize, sizeof(int));
     int **ans = (int **)calloc(*returnSize, sizeof(int *));

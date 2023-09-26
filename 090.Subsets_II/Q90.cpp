@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Subsets II
+// URL: https://leetcode.com/problems/subsets-ii/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -5,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+    vector<vector<int>> subsetsWithDup(vector<int> &nums) {
         sort(nums.begin(), nums.end());
         vector<vector<int>> ans;
         vector<int> subset;

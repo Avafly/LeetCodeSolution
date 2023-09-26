@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Valid Parentheses
+// URL: https://leetcode.com/problems/valid-parentheses/
+
 #include <iostream>
 #include <string>
 

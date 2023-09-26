@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Generate Parentheses
+// URL: https://leetcode.com/problems/generate-parentheses/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -25,7 +30,7 @@ void rec(char **ans, int left, int right, int n, char *per, int perIndex, int *c
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-char ** generateParenthesis(int n, int* returnSize){
+char **generateParenthesis(int n, int *returnSize){
     int MAXSIZE[] = {0, 1, 2, 5, 14, 42, 132, 429, 1430};
     *returnSize = MAXSIZE[n];
     char **ans = (char **)calloc(*returnSize + 1, sizeof(char *));

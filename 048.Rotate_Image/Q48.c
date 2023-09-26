@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Rotate Image
+// URL: https://leetcode.com/problems/rotate-image/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,7 +15,7 @@ void swap(int *l, int *r){
     }
 }
 
-void rotate(int** matrix, int matrixSize, int* matrixColSize){
+void rotate(int **matrix, int matrixSize, int *matrixColSize){
     // transpose
     for(int i = 0; i < matrixSize; ++i) {
         for(int j = i; j < matrixSize; ++j) {

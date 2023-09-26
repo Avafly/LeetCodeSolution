@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Next Permutation
+// URL: https://leetcode.com/problems/next-permutation/
+
 #include <stdio.h>
 #include <stdlib.h>
 

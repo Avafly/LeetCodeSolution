@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Scramble String
+// URL: https://leetcode.com/problems/scramble-string/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -9,7 +14,7 @@
                            (f(s1(0,i), s2(n-1,i)) ∧ f(s1(i,n-i), s2(0,n-i)))
  */
 
-bool isScramble(char* s1, char* s2) {
+bool isScramble(char *s1, char *s2) {
     int n = (int)strlen(s1);
     bool map[n + 1][n][n];
     memset(map, false, sizeof(map));

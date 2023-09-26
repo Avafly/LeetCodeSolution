@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Zigzag Conversion
+// URL: https://leetcode.com/problems/zigzag-conversion/
+
 #include <iostream>
 #include <string>
 #include <vector>

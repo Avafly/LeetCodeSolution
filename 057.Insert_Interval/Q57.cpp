@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Insert Interval
+// URL: https://leetcode.com/problems/insert-interval/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -5,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
+    vector<vector<int>> insert(vector<vector<int>> &intervals, vector<int> &newInterval) {
         // insert newInterval in the appropriate position
         int numsSize = intervals.size();
         for(int i = 0; i < numsSize; ++i) {

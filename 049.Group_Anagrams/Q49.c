@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Group Anagrams
+// URL: https://leetcode.com/problems/group-anagrams/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Validate Binary Search Tree
+// URL: https://leetcode.com/problems/validate-binary-search-tree/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -38,7 +43,7 @@ bool isValid(struct TreeNode *root, struct TreeNode *minNode, struct TreeNode *m
  *     struct TreeNode *right;
  * };
  */
-bool isValidBST(struct TreeNode* root){
+bool isValidBST(struct TreeNode *root){
     return isValid(root, NULL, NULL);
 }
 

@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted Array II
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
-    int removeDuplicates(vector<int>& nums) {
+    int removeDuplicates(vector<int> &nums) {
         int count = 1;
         int ansSize = 1;
         for(int i = 1; i < nums.size(); ++i) {

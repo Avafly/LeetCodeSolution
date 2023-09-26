@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Interleaving String
+// URL: https://leetcode.com/problems/interleaving-string/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Reverse Linked List II
+// URL: https://leetcode.com/problems/reverse-linked-list-ii/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -58,7 +63,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* reverseBetween(ListNode* head, int left, int right) {
+    ListNode *reverseBetween(ListNode *head, int left, int right) {
         if(left == right) return head;
         ListNode *prev = NULL;
         ListNode *curr = head;

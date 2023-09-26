@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Pow(x, n)
+// URL: https://leetcode.com/problems/powx-n/
+
 #include <stdio.h>
 
 double myPow(double x, int n){

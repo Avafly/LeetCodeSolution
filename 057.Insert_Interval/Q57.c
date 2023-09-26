@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Insert Interval
+// URL: https://leetcode.com/problems/insert-interval/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -10,7 +15,7 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* newInterval, int newIntervalSize, int* returnSize, int** returnColumnSizes){
+int **insert(int **intervals, int intervalsSize, int *intervalsColSize, int *newInterval, int newIntervalSize, int *returnSize, int **returnColumnSizes){
     if(intervalsSize == 0) {
         int **ans = (int **)malloc(sizeof(int *) * (*returnSize));
         ans[0] = (int *)malloc(sizeof(int) * 2);
@@ -41,11 +46,6 @@ int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* new
         intervalsArr[countArr++][1] = newInterval[1];
     }
 
-    /* print intervalsArr */
-    // for(int i = 0; i < countArr; ++i) {
-    //     printf("%d %d\n", intervalsArr[i][0], intervalsArr[i][1]);
-    // }
-
     int temp[10001][2] = {0};
     int countAns = 0;
 
@@ -61,11 +61,6 @@ int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* new
             temp[countAns++][1] = intervalsArr[i][1];
         }
     }
-
-    /* print answer */
-    // for(int i = 0; i < countAns; ++i) {
-    //     printf("%d %d\n", temp[i][0], temp[i][1]);
-    // }
 
     *returnSize = countAns;
 
@@ -87,16 +82,8 @@ int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* new
 }
 
 int main(int argc, char **argv) {
-    // int intervals[][2] = {
-    //     {1, 5},
-    //     {3, 3},
-    //     {3, 3},
-    //     {3, 3},
-    //     {3, 3},
-    // };
     int intervals[1][2] = {{1, 5}};
 
-    //int *p[ARRSIZE] = {intervals[0], intervals[1], intervals[2], intervals[3], intervals[4]};
     int *p[ARRSIZE] = {intervals[0]};
 
     int newInterval[] = {6, 6};

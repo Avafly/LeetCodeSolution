@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Validate Binary Search Tree
+// URL: https://leetcode.com/problems/validate-binary-search-tree/
+
 #include <iostream>
 
 using namespace std;
@@ -53,7 +58,7 @@ void inorderTravel(TreeNode *root) {
  */
 class Solution {
 public:
-    bool isValidBST(TreeNode* root) {
+    bool isValidBST(TreeNode *root) {
         return isValid(root, nullptr, nullptr);
     }
     

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Longest Common Prefix
+// URL: https://leetcode.com/problems/longest-common-prefix/
+
 #include <iostream>
 #include <string>
 #include <vector>

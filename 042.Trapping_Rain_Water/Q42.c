@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Trapping Rain Water
+// URL: https://leetcode.com/problems/trapping-rain-water/
+
 #include <stdio.h>
 
 /*
@@ -14,7 +19,7 @@ calculate the trapped water at the right pointer, then decrement the right point
 
 */
 
-int trap(int* height, int heightSize){
+int trap(int *height, int heightSize){
     int trapped_water = 0;
     int left = 0;
     int right = heightSize - 1;

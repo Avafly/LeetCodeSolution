@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Wildcard Matching
+// URL: https://leetcode.com/problems/wildcard-matching/
+
 #include <stdio.h>
 #include <stdbool.h>
 

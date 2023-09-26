@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Rotate Image
+// URL: https://leetcode.com/problems/rotate-image/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -5,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    void rotate(vector<vector<int>>& matrix) {
+    void rotate(vector<vector<int>> &matrix) {
         int n = matrix.size();
 
         for(int i = 0; i < n; ++i) {

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted Array
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 #include <iostream>
 #include <vector>
 
@@ -5,10 +10,10 @@ using namespace std;
 
 class Solution {
 public:
-    int removeDuplicates(vector<int>& nums) {
+    int removeDuplicates(vector<int> &nums) {
         int count = 0;
 
-        for(int i=1; i<nums.size(); ++i) {
+        for(int i = 1; i < nums.size(); ++i) {
             if(nums[i] != nums[count]) {
                 nums[++count] = nums[i];
             }
@@ -20,7 +25,7 @@ public:
 int main() {
     vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
 
-    for(int i=0; i<nums.size(); ++i) {
+    for(int i = 0; i < nums.size(); ++i) {
         cout << nums[i] << " ";
     }
     cout << endl;
@@ -29,7 +34,7 @@ int main() {
 
     int len = sol.removeDuplicates(nums);
 
-    for(int i=0; i<len; ++i) {
+    for(int i = 0; i < len; ++i) {
         cout << nums[i] << " ";
     }
     cout << endl;

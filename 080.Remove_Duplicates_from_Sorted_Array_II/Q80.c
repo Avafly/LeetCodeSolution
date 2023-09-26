@@ -1,6 +1,11 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted Array II
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+
 #include <stdio.h>
 
-int removeDuplicates(int* nums, int numsSize){
+int removeDuplicates(int *nums, int numsSize){
     int count = 1;
     int ansSize = 1;
     

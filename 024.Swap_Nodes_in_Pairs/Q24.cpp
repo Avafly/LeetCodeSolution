@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Swap Nodes in Pairs
+// URL: https://leetcode.com/problems/swap-nodes-in-pairs/
+
 #include <iostream>
 
 using namespace std;
@@ -10,21 +15,21 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-void clearList(ListNode* list) {
-    ListNode* p = list;
-    ListNode* deleteP = nullptr;
+void clearList(ListNode *list) {
+    ListNode *p = list;
+    ListNode *deleteP = nullptr;
 
-    while (p != nullptr) {
+    while(p != nullptr) {
         deleteP = p;
         p = p->next;
         delete(deleteP);
     }
 }
 
-void printList(ListNode* list) {
-    ListNode* p = list;
+void printList(ListNode *list) {
+    ListNode *p = list;
 
-    while (p != nullptr) {
+    while(p != nullptr) {
         cout << p->val << " ";
         p = p->next;
     }
@@ -33,7 +38,7 @@ void printList(ListNode* list) {
 
 class Solution {
 public:
-    ListNode* swapPairs(ListNode* head) {
+    ListNode *swapPairs(ListNode *head) {
         int even = 0;
         int isFirst = 1;
         ListNode *p = head;

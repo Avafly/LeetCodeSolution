@@ -1,8 +1,13 @@
+
+// LeetCode Problem:
+// Title: Set Matrix Zeroes
+// URL: https://leetcode.com/problems/set-matrix-zeroes/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
-void setZeroes(int** matrix, int matrixSize, int* matrixColSize){
+void setZeroes(int **matrix, int matrixSize, int *matrixColSize){
     bool isRowZero = false;
     bool isColZero = false;
     

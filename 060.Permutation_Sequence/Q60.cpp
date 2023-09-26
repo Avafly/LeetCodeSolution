@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Permutation Sequence
+// URL: https://leetcode.com/problems/permutation-sequence/
+
 #include <iostream>
 #include <string>
 #include <vector>

@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Longest Palindromic Substring
+// URL: https://leetcode.com/problems/longest-palindromic-substring/
+
 #include <iostream>
 #include <string>
 #include <vector>

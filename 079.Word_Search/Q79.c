@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Word Search
+// URL: https://leetcode.com/problems/word-search/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -45,7 +50,7 @@ bool rec(char **board, int boardSize, int *boardColSize, const char *word, int r
     return false;
 }
 
-bool exist(char** board, int boardSize, int* boardColSize, char * word){
+bool exist(char **board, int boardSize, int *boardColSize, char *word){
     if(strlen(word) > boardSize * boardColSize[0])   return false;
     
     for(int row = 0; row < boardSize; ++row) {

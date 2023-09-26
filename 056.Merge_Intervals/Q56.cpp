@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge Intervals
+// URL: https://leetcode.com/problems/merge-intervals/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -5,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+    vector<vector<int>> merge(vector<vector<int>> &intervals) {
         vector<vector<int>> ans;
 
         sort(intervals.begin(), intervals.end());

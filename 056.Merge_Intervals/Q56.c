@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge Intervals
+// URL: https://leetcode.com/problems/merge-intervals/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,9 +10,9 @@
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
-int compare(const void* a, const void* b) {
-    int* arr1 = *(int**)a;
-    int* arr2 = *(int**)b;
+int compare(const void *a, const void *b) {
+    int *arr1 = *(int**)a;
+    int *arr2 = *(int**)b;
     if(arr1[0] == arr2[0]) {
         return arr1[1] - arr2[1];
     }
@@ -21,7 +26,7 @@ int compare(const void* a, const void* b) {
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** merge(int** intervals, int intervalsSize, int* intervalsColSize, int* returnSize, int** returnColumnSizes){
+int **merge(int **intervals, int intervalsSize, int *intervalsColSize, int *returnSize, int **returnColumnSizes) {
     qsort(intervals, intervalsSize, sizeof(int[2]), compare);
 
     /* print sorted array */

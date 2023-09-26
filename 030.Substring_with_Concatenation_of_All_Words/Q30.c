@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Substring with Concatenation of All Words
+// URL: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -69,7 +74,7 @@ void clearWordArr(WordArr *arr, int size) {
     }
 }
 
-int* findSubstring(char * s, char ** words, int wordsSize, int* returnSize){
+int *findSubstring(char *s, char **words, int wordsSize, int *returnSize){
     int *ans = (int *)calloc(strlen(s), sizeof(int));
     *returnSize = 0;
     

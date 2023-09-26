@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Count and Say
+// URL: https://leetcode.com/problems/count-and-say/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

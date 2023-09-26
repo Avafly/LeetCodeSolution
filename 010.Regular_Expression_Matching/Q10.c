@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Regular Expression Matching
+// URL: https://leetcode.com/problems/regular-expression-matching/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

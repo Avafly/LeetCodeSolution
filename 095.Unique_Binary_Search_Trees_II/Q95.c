@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Unique Binary Search Trees II
+// URL: https://leetcode.com/problems/unique-binary-search-trees-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -74,7 +79,7 @@ struct TreeNode **generateTreesFromRange(int start, int end, int *returnSize) {
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-struct TreeNode** generateTrees(int n, int* returnSize){
+struct TreeNode **generateTrees(int n, int *returnSize){
     if(n == 0) {
         *returnSize = 0;
         return NULL;

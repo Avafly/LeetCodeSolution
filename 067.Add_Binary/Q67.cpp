@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Add Binary
+// URL: https://leetcode.com/problems/add-binary/
+
 #include <iostream>
 #include <string>
 using namespace std;

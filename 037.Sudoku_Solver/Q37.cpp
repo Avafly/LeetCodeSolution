@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Sudoku Solver
+// URL: https://leetcode.com/problems/sudoku-solver/
+
 #include <iostream>
 #include <vector>
 
@@ -5,12 +10,12 @@ using namespace std;
 
 class Solution {
 public:
-    void solveSudoku(vector<vector<char>>& board) {
+    void solveSudoku(vector<vector<char>> &board) {
         solve(board);
     }
 
 private:
-    bool solve(vector<vector<char>>& board) {
+    bool solve(vector<vector<char>> &board) {
         for(int i = 0; i < 9; ++i) {
             for(int j = 0; j < 9; ++j) {
                 if(board[i][j] == '.') {

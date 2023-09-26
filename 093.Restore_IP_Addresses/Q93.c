@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Restore IP Addresses
+// URL: https://leetcode.com/problems/restore-ip-addresses/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,14 +20,14 @@ void rec(char *s, int index, int octet, char *ip, int ipIndex, char **res, int *
 
     int num = 0;
     for(int i = 0; i < 3; ++i) {
-        if(s[index + i] == '\0') break;
+        if(s[index + i] == '\0') { break; }
         num = num * 10 + (s[index + i] - '0');
         if(num <= 255) {
             ip[ipIndex + i] = s[index + i];
             ip[ipIndex + i + 1] = '.';
             rec(s, index + i + 1, octet + 1, ip, ipIndex + i + 2, res, returnSize);
         }
-        if(num == 0) break;
+        if(num == 0) { break; }
     }
 }
 

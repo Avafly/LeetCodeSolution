@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: N-Queens
+// URL: https://leetcode.com/problems/n-queens/
+
 #include <iostream>
 #include <vector>
 #include <string>

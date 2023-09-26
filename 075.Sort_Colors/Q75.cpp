@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Sort Colors
+// URL: https://leetcode.com/problems/sort-colors/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
-    void sortColors(vector<int>& nums) {
+    void sortColors(vector<int> &nums) {
         int counts[3] = {0};
         for(int i = 0; i < nums.size(); ++i) {
             ++counts[nums[i]];

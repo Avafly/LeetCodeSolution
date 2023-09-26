@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Valid Number
+// URL: https://leetcode.com/problems/valid-number/
+
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>

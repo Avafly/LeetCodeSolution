@@ -1,8 +1,13 @@
+
+// LeetCode Problem:
+// Title: Search in Rotated Sorted Array II
+// URL: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool search(int* nums, int numsSize, int target){
+bool search(int *nums, int numsSize, int target){
     int left = 0;
     int right = numsSize - 1;
 

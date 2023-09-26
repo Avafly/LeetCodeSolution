@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Add Binary
+// URL: https://leetcode.com/problems/add-binary/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

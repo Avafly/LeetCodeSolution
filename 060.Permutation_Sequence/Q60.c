@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Permutation Sequence
+// URL: https://leetcode.com/problems/permutation-sequence/
+
 #include <stdio.h>
 #include <stdlib.h>
 

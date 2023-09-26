@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Jump Game II
+// URL: https://leetcode.com/problems/jump-game-ii/
+
 #include <stdio.h>
 
 /*

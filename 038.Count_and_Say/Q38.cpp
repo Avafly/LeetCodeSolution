@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Count and Say
+// URL: https://leetcode.com/problems/count-and-say/
+
 #include <iostream>
 #include <string>
 using namespace std;

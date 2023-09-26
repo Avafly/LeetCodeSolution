@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Sudoku Solver
+// URL: https://leetcode.com/problems/sudoku-solver/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -6,7 +11,7 @@
 bool solve(char **board);
 bool isValid(char **board, int row, int col, char numc);
 
-void solveSudoku(char** board, int boardSize, int* boardColSize){
+void solveSudoku(char **board, int boardSize, int *boardColSize){
     solve(board);
 }
 

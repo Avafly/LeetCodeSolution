@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Valid Sudoku
+// URL: https://leetcode.com/problems/valid-sudoku/
+
 #include <iostream>
 #include <vector>
 #include <unordered_set>
@@ -6,7 +11,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool isValidSudoku(vector<vector<char>>& board) {
+    bool isValidSudoku(vector<vector<char>> &board) {
         vector<unordered_set<char>> rows(9), cols(9), boxes(9);
 
         for(int i = 0; i < 9; ++i) {

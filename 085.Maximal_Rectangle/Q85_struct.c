@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Maximal Rectangle
+// URL: https://leetcode.com/problems/maximal-rectangle/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -44,7 +49,7 @@ int top(STACK *stack) {
     return stack->data;
 }
 
-int largestRectangleArea(int* heights, int heightsSize){
+int largestRectangleArea(int *heights, int heightsSize){
     int ans = 0;
     STACK *monoStack = NULL;
     
@@ -69,7 +74,7 @@ int largestRectangleArea(int* heights, int heightsSize){
     return ans;
 }
 
-int maximalRectangle(char** matrix, int matrixSize, int* matrixColSize){
+int maximalRectangle(char **matrix, int matrixSize, int *matrixColSize){
     int *heights = (int *)calloc(*matrixColSize, sizeof(int));
     int ans = 0;
     

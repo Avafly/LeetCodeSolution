@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge k Sorted Lists
+// URL: https://leetcode.com/problems/merge-k-sorted-lists/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,8 +11,8 @@ struct ListNode {
     struct ListNode *next;
 };
 
-void print_LinkedList(struct ListNode* l) {
-    struct ListNode* p = NULL;
+void print_LinkedList(struct ListNode *l) {
+    struct ListNode *p = NULL;
 
     while (l!=NULL) {
         p = l;
@@ -18,8 +23,8 @@ void print_LinkedList(struct ListNode* l) {
     printf("\n");
 }
 
-void free_LinkedList(struct ListNode* l) {
-    struct ListNode* p = NULL;
+void free_LinkedList(struct ListNode *l) {
+    struct ListNode *p = NULL;
 
     while (l!=NULL) {
         p = l;
@@ -29,7 +34,7 @@ void free_LinkedList(struct ListNode* l) {
     }
 }
 
-struct ListNode* mergeKLists(struct ListNode** lists, int listsSize){
+struct ListNode *mergeKLists(struct ListNode **lists, int listsSize){
     if(listsSize == 0) return NULL;
 
     int nums[20000] = {0};
@@ -38,7 +43,7 @@ struct ListNode* mergeKLists(struct ListNode** lists, int listsSize){
     struct ListNode *ans = NULL;
     int isFirst = 1;
 
-    for(int i=0; i<listsSize; ++i) {
+    for(int i = 0; i < listsSize; ++i) {
         p = lists[i];
         while(p != NULL) {
             int idx = p->val + offset;
@@ -47,7 +52,7 @@ struct ListNode* mergeKLists(struct ListNode** lists, int listsSize){
         }
     }
 
-    for(int i=0; i<20000; ++i) {
+    for(int i = 0; i < 20000; ++i) {
         while(nums[i] != 0) {
             if(isFirst) {
                 ans = (struct ListNode*)malloc(sizeof(struct ListNode));

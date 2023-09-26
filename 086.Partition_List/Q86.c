@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Partition List
+// URL: https://leetcode.com/problems/partition-list/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -7,7 +12,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createList(int nums[], int size) {
+struct ListNode *createList(int nums[], int size) {
     struct ListNode *list = NULL;
     struct ListNode *tail = NULL;
 
@@ -67,7 +72,7 @@ int listSize(struct ListNode *list) {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* partition(struct ListNode* head, int x){
+struct ListNode *partition(struct ListNode *head, int x){
     if(x < -100 || x > 100) return head;
     struct ListNode *dummy = (struct ListNode *)malloc(sizeof(struct ListNode));
     dummy->next = head;

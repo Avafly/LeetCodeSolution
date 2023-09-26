@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Maximal Rectangle
+// URL: https://leetcode.com/problems/maximal-rectangle/
+
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -14,7 +19,7 @@ using namespace std;
 
 class Solution {
 public:
-    int maximalRectangle(vector<vector<char>>& matrix) {
+    int maximalRectangle(vector<vector<char>> &matrix) {
         vector<int> heights(matrix[0].size(), 0);
         int ans = 0;
         
@@ -34,7 +39,7 @@ public:
     }
 
 private:
-    int largestRectangleArea(vector<int>& heights) {
+    int largestRectangleArea(vector<int> &heights) {
         int n = static_cast<int>(heights.size());
         stack<int> monoStack;
         int ans = 0;

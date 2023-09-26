@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Two Sum
+// URL: https://leetcode.com/problems/two-sum/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "uthash.h"

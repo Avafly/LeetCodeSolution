@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Rotate List
+// URL: https://leetcode.com/problems/rotate-list/
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -62,7 +67,7 @@ int listSize(struct ListNode *list) {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* rotateRight(struct ListNode* head, int k){
+struct ListNode *rotateRight(struct ListNode *head, int k){
     struct ListNode *p = head;
     int len = listSize(head);
     if(len == 0) {

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Combination Sum
+// URL: https://leetcode.com/problems/combination-sum/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,7 +35,7 @@ void findComb(int *candidates, int candidatesSize, int target, int start, int *c
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** combinationSum(int* candidates, int candidatesSize, int target, int* returnSize, int** returnColumnSizes){
+int **combinationSum(int *candidates, int candidatesSize, int target, int *returnSize, int **returnColumnSizes){
     // setup of return parameters
     int **ans = (int **)malloc(sizeof(int *) * CAPACITY);
     *returnSize = CAPACITY;

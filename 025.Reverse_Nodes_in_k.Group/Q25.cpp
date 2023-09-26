@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Reverse Nodes in k-Group
+// URL: https://leetcode.com/problems/reverse-nodes-in-k-group/
+
 #include <iostream>
 
 using namespace std;
@@ -34,7 +39,7 @@ void printList(ListNode *list) {
 
 class Solution {
 public:
-    ListNode* reverseKGroup(ListNode* head, int k) {
+    ListNode *reverseKGroup(ListNode *head, int k) {
         if(k == 1) return head;
 
         int len = 0;
@@ -46,16 +51,16 @@ public:
             tmp = tmp->next;
         }
 
-        for(int i=(k-1); i<len; i+=k) {
+        for(int i = k - 1; i < len; i += k) {
             int start = i - k + 1;
             int end = i;
             while(start < end) {
                 // swap
-                if(start+1 == end) {
+                if(start + 1 == end) {
                     nodes[start]->next = nodes[end]->next;
                     nodes[end]->next = nodes[start];
                     if(start != 0) {
-                        nodes[start-1]->next = nodes[end];
+                        nodes[start - 1]->next = nodes[end];
                     }
                     tmp = nodes[end];
                     nodes[end] = nodes[start];
@@ -66,9 +71,9 @@ public:
                     nodes[end]->next = nodes[start]->next;
                     nodes[start]->next = tmp;
                     if(start != 0) {
-                        nodes[start-1]->next = nodes[end];
+                        nodes[start - 1]->next = nodes[end];
                     }
-                    nodes[end-1]->next = nodes[start];
+                    nodes[end - 1]->next = nodes[start];
                     tmp = nodes[end];
                     nodes[end] = nodes[start];
                     nodes[start] = tmp;

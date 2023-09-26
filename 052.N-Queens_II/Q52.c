@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: N-Queens II
+// URL: https://leetcode.com/problems/n-queens-ii/
+
 #include <stdio.h>
 
 /*

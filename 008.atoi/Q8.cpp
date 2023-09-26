@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: String to Integer (atoi)
+// URL: https://leetcode.com/problems/string-to-integer-atoi/
+
 #include <iostream>
 #include <string>
 

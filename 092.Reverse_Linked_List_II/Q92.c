@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Reverse Linked List II
+// URL: https://leetcode.com/problems/reverse-linked-list-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,7 +11,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createList(int nums[], int size) {
+struct ListNode *createList(int nums[], int size) {
     struct ListNode *list = NULL;
     struct ListNode *tail = NULL;
 
@@ -66,7 +71,7 @@ int listSize(struct ListNode *list) {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* reverseBetween(struct ListNode* head, int left, int right){
+struct ListNode *reverseBetween(struct ListNode *head, int left, int right){
     if(left == right) return head;
     struct ListNode *prev = NULL;
     struct ListNode *curr = head;

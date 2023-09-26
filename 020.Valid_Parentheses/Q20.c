@@ -1,8 +1,13 @@
+
+// LeetCode Problem:
+// Title: Valid Parentheses
+// URL: https://leetcode.com/problems/valid-parentheses/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
 
-bool isValid(char * s){
+bool isValid(char *s){
     if(strlen(s) % 2 == 1) {
         return false;
     }
@@ -45,11 +50,10 @@ bool isValid(char * s){
     return count == 0;
 }
 
-int main() {
+int main(int argc, const char *argv[]) {
     char *s = "){";
-    
-    if(isValid(s) == 0) printf("false\n");
-    else printf("true\n");
+
+    printf("%s\n", isValid(s) ? "True" : "False");
 
     return 0;
 }

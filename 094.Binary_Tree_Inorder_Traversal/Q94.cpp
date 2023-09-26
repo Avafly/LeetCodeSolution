@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Binary Tree Inorder Traversal
+// URL: https://leetcode.com/problems/binary-tree-inorder-traversal/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -44,7 +49,7 @@ void freeTree(TreeNode *root) {
  */
 class Solution {
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode *root) {
         vector<int> ans;
         rec(root, ans);
         return ans;

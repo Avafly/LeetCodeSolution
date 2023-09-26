@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Multiply Strings
+// URL: https://leetcode.com/problems/multiply-strings/description/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -1,6 +1,11 @@
+
+// LeetCode Problem:
+// Title: Sort Colors
+// URL: https://leetcode.com/problems/sort-colors/
+
 #include <stdio.h>
 
-void sortColors(int* nums, int numsSize){
+void sortColors(int *nums, int numsSize){
     int counts[3] = {0};
     for(int i = 0; i < numsSize; ++i) {
         ++counts[nums[i]];

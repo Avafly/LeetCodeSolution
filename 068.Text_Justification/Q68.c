@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Text Justification
+// URL: https://leetcode.com/problems/text-justification/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,7 +10,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-char ** fullJustify(char ** words, int wordsSize, int maxWidth, int* returnSize){
+char ** fullJustify(char **words, int wordsSize, int maxWidth, int *returnSize){
     char **ans = (char **)malloc(sizeof(char *) * wordsSize);
     *returnSize = 0;
     int i = 0;

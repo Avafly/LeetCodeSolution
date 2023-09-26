@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: 3Sum
+// URL: https://leetcode.com/problems/3sum/
+
 #include <stdio.h>
 #include <stdlib.h>
 

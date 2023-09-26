@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Reverse Integer
+// URL: https://leetcode.com/problems/reverse-integer/
+
 #include <stdio.h>
 
 int reverse(int x){

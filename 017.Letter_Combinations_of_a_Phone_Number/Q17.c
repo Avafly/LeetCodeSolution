@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Letter Combinations of a Phone Number
+// URL: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

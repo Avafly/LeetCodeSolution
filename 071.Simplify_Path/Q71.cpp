@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Simplify Path
+// URL: https://leetcode.com/problems/simplify-path/
+
 #include <iostream>
 #include <string>
 #include <vector>

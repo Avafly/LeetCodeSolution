@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Nth Node From End of List
+// URL: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -6,7 +11,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createList(int nums[], int size) {
+struct ListNode *createList(int nums[], int size) {
     struct ListNode *list = NULL;
     struct ListNode *tail = NULL;
 
@@ -56,7 +61,7 @@ void clearList(struct ListNode *list) {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* removeNthFromEnd(struct ListNode* head, int n) {
+struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
     struct ListNode *dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
     dummy->next = head;
     struct ListNode *fir = dummy;

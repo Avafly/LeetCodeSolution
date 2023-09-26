@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Remove Element
+// URL: https://leetcode.com/problems/remove-element/
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int removeElement(int* nums, int numsSize, int val){
+int removeElement(int *nums, int numsSize, int val){
     int count = 0;
 
-    for(int i=0; i<numsSize; ++i) {
+    for(int i = 0; i < numsSize; ++i) {
         if(nums[i] != val) {
             nums[count++] = nums[i];
         }
@@ -25,7 +30,7 @@ int main(int argc, char **argv) {
     int val = 4;
     printf("%d\n", removeElement(nums, len, val));
 
-    for(int i=0; i<len; ++i) {
+    for(int i = 0; i < len; ++i) {
         printf("%d ", nums[i]);
     }
     printf("\n");

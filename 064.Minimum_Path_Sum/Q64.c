@@ -1,9 +1,14 @@
+
+// LeetCode Problem:
+// Title: Minimum Path Sum
+// URL: https://leetcode.com/problems/minimum-path-sum/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
-int minPathSum(int** grid, int gridSize, int* gridColSize){
+int minPathSum(int **grid, int gridSize, int *gridColSize){
     int m = gridSize;
     int n = gridColSize[0];
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Search Insert Position
+// URL: https://leetcode.com/problems/search-insert-position/
+
 #include <stdio.h>
 
 int searchInsert(int* nums, int numsSize, int target){
@@ -6,7 +11,7 @@ int searchInsert(int* nums, int numsSize, int target){
     int midI;
 
     while(left <= right) {
-        midI = (left+right) / 2;
+        midI = (left + right) / 2;
         if(nums[midI] == target) {
             return midI;
         }
@@ -18,7 +23,7 @@ int searchInsert(int* nums, int numsSize, int target){
         }
     }
 
-    return left>right ? left : right;
+    return left > right ? left : right;
 }
 
 int main(int argc, char **argv) {

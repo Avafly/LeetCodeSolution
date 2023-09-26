@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Text Justification
+// URL: https://leetcode.com/problems/text-justification/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -5,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<string> fullJustify(vector<string>& words, int maxWidth) {
+    vector<string> fullJustify(vector<string> &words, int maxWidth) {
         vector<string> ans;
         int n = words.size();
         int i = 0;

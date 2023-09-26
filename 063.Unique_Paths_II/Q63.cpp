@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Unique Paths II
+// URL: https://leetcode.com/problems/unique-paths-ii/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -14,7 +19,7 @@ using namespace std;
 
 class Solution {
 public:
-    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
+    int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {
         int m = obstacleGrid.size(), n = obstacleGrid[0].size();
 
         vector<vector<long>> map(m, vector<long>(n, 0));

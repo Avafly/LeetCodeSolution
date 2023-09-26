@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Search in Rotated Sorted Array II
+// URL: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
-    bool search(vector<int>& nums, int target) {
+    bool search(vector<int> &nums, int target) {
         int left = 0;
         int right = static_cast<int>(nums.size() - 1);
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: 4Sum
+// URL: https://leetcode.com/problems/4sum/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -8,7 +13,7 @@ class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         vector<vector<int>> ans;
-        int  numsSize = static_cast<int>(nums.size());
+        int numsSize = static_cast<int>(nums.size());
         sort(nums.begin(), nums.end());
 
         for(int i = 0; i < numsSize - 3; ++i) {
@@ -34,10 +39,10 @@ public:
                         ans.push_back({nums[i], nums[j], nums[start], nums[end]});
                         ++start;
                         --end;
-                        while(start-1>j && start<end && nums[start]==nums[start-1]) {
+                        while(start - 1 > j && start < end && nums[start] == nums[start - 1]) {
                             ++start;
                         }
-                        while(end<numsSize-1 && start<end && nums[end]==nums[end+1]) {
+                        while(end < numsSize - 1 && start < end && nums[end] == nums[end + 1]) {
                             --end;
                         }
                     }

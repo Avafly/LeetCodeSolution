@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Median of Two Sorted Arrays
+// URL: https://leetcode.com/problems/median-of-two-sorted-arrays/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

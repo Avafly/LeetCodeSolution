@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted Array
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 #include <stdio.h>
 #include <stdlib.h>
 
-int removeDuplicates(int* nums, int numsSize){
+int removeDuplicates(int *nums, int numsSize){
     int count = 0;
 
-    for(int i=1; i<numsSize; ++i) {
+    for(int i = 1; i < numsSize; ++i) {
         if(nums[i] != nums[count]) {
             nums[++count] = nums[i];
         }

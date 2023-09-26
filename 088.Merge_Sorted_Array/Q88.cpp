@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge Sorted Array
+// URL: https://leetcode.com/problems/merge-sorted-array/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -8,7 +13,7 @@ using namespace std;
 
 class Solution {
 public:
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+    void merge(vector<int> &nums1, int m, vector<int> &nums2, int n) {
         vector<int> nums(m + n, 0);
         int i1 = 0, i2 = 0;
         

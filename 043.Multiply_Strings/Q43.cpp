@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Multiply Strings
+// URL: https://leetcode.com/problems/multiply-strings/description/
+
 #include <iostream>
 #include <string>
 #include <vector>

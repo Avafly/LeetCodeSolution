@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge Two Sorted Lists
+// URL: https://leetcode.com/problems/merge-two-sorted-lists/
+
 #include <iostream>
 #include <vector>
 
@@ -59,7 +64,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
         ListNode *ans = nullptr;
         ListNode *p = nullptr;
         int isFirst = 1;

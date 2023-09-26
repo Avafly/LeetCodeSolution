@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Permutations
+// URL: https://leetcode.com/problems/permutations/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -31,7 +36,7 @@ void rec(int **ans, int *nums, int start, int *count, int n) {
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** permute(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){
+int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes){
     // length of the permutation
     int factValue[] = {1, 1, 2, 6, 24, 120, 720};
 

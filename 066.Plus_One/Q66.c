@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Plus One
+// URL: https://leetcode.com/problems/plus-one/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int* plusOne(int* digits, int digitsSize, int* returnSize){
+int *plusOne(int *digits, int digitsSize, int *returnSize){
     ++digits[digitsSize - 1];
 
     for(int i = digitsSize - 1; i > 0; --i) {

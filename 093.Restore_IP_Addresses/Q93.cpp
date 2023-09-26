@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Restore IP Addresses
+// URL: https://leetcode.com/problems/restore-ip-addresses/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -30,7 +35,7 @@ private:
                 ip += s[i];
                 rec(s, i + 1, octet + 1, ip + '.', ans);
             }
-            if(num == 0) break;
+            if(num == 0) { break; }
         }
     }
 };

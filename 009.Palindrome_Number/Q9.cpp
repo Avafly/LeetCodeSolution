@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Palindrome Number
+// URL: https://leetcode.com/problems/palindrome-number/
+
 #include <iostream>
 #include <string>
 

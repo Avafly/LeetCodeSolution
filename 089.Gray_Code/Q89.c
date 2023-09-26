@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Gray Code
+// URL: https://leetcode.com/problems/gray-code/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,7 +13,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int* grayCode(int n, int* returnSize){
+int* grayCode(int n, int *returnSize){
     int size = 1 << n;
     *returnSize = size;
     int *ans = (int *)malloc(sizeof(int) * size);

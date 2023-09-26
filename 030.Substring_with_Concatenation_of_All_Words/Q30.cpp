@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Substring with Concatenation of All Words
+// URL: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -11,7 +16,7 @@ https://leetcode.wang/leetCode-30-Substring-with-Concatenation-of-All-Words.html
 
 class Solution {
 public:
-    vector<int> findSubstring(string s, vector<string>& words) {
+    vector<int> findSubstring(string s, vector<string> &words) {
         vector<int> ans;
         if(words.empty() || s.empty()) return ans;
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Next Permutation
+// URL: https://leetcode.com/problems/next-permutation/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -6,7 +11,7 @@ using namespace std;
 
 class Solution {
 public:
-    void nextPermutation(vector<int>& nums) {
+    void nextPermutation(vector<int> &nums) {
         int k, l = nums.size();
 
         // retrieve the element smaller than the right-hand elements

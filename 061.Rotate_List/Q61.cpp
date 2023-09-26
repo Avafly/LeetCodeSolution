@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Rotate List
+// URL: https://leetcode.com/problems/rotate-list/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -58,7 +63,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* rotateRight(ListNode* head, int k) {
+    ListNode *rotateRight(ListNode *head, int k) {
         ListNode *p = head;
         int len = listSize(head);
         if(len == 0) {

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Subsets II
+// URL: https://leetcode.com/problems/subsets-ii/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,7 +30,7 @@ void rec(int **ans, int *ansSize, int *nums, int numsSize, int *subset, int *sub
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int** subsetsWithDup(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){
+int **subsetsWithDup(int *nums, int numsSize, int *returnSize, int **returnColumnSizes){
     *returnSize = 1 << numsSize;
     *returnColumnSizes = (int *)calloc(*returnSize, sizeof(int));
     int **ans = (int **)calloc(*returnSize, sizeof(int *));

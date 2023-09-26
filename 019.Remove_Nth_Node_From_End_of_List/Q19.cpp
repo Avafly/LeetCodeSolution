@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Nth Node From End of List
+// URL: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
 #include <iostream>
 #include <vector>
 
@@ -59,7 +64,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
+    ListNode *removeNthFromEnd(ListNode *head, int n) {
         ListNode *dummy = new ListNode();
         dummy->next = head;
         ListNode *fir = dummy;

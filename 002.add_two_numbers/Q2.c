@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Add Two Numbers
+// URL: https://leetcode.com/problems/add-two-numbers/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,14 +10,13 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createList(int nums[], int size) {
+struct ListNode *createList(int nums[], int size) {
     struct ListNode *list = NULL;
     struct ListNode *tail = NULL;
 
     for(int i = 0; i < size; ++i) {
-        struct ListNode *newNode = (struct ListNode *)malloc(sizeof(struct ListNode));
+        struct ListNode *newNode = (struct ListNode *)calloc(1, sizeof(struct ListNode));
         newNode->val = nums[i];
-        newNode->next = NULL;
 
         if(!list) {
             list = newNode;
@@ -49,7 +52,7 @@ void clearList(struct ListNode *list) {
     }
 }
 
-struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 
     struct ListNode *p = NULL;
     struct ListNode *ans = NULL;
@@ -76,9 +79,8 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
         sum = sum - carry * 10;
 
         // create a new node and assign a number
-        p = (struct ListNode*)malloc(sizeof(struct ListNode));
+        p = (struct ListNode*)calloc(1, sizeof(struct ListNode));
         p->val = sum;
-        p->next = NULL;
         if(!ans) {
             ans = p;
             pTail = p;

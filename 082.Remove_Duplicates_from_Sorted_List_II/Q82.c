@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Remove Duplicates from Sorted List II
+// URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -7,7 +12,7 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode* createList(int nums[], int size) {
+struct ListNode *createList(int nums[], int size) {
     struct ListNode *list = NULL;
     struct ListNode *tail = NULL;
 
@@ -67,7 +72,7 @@ int listSize(struct ListNode *list) {
  *     struct ListNode *next;
  * };
  */
-struct ListNode* deleteDuplicates(struct ListNode* head){
+struct ListNode *deleteDuplicates(struct ListNode *head){
     if(!head || !head->next) return head;
 
     struct ListNode *dummy = (struct ListNode *)malloc(sizeof(struct ListNode));

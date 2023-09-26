@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Trapping Rain Water
+// URL: https://leetcode.com/problems/trapping-rain-water/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -18,7 +23,7 @@ calculate the trapped water at the right pointer, then decrement the right point
 
 class Solution {
 public:
-    int trap(vector<int>& height) {
+    int trap(vector<int> &height) {
         int trapped_water = 0;
         int left = 0;
         int right = height.size() - 1;

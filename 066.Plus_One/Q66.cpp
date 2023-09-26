@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Plus One
+// URL: https://leetcode.com/problems/plus-one/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 class Solution {
 public:
-    vector<int> plusOne(vector<int>& digits) {
+    vector<int> plusOne(vector<int> &digits) {
         digits.back() += 1;
 
         for(int i = digits.size() - 1; i > 0; --i) {

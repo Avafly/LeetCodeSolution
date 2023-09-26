@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Scramble String
+// URL: https://leetcode.com/problems/scramble-string/
+
 #include <iostream>
 #include <string>
 using namespace std;

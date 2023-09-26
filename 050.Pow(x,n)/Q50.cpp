@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Pow(x, n)
+// URL: https://leetcode.com/problems/powx-n/
+
 #include <iostream>
 using namespace std;
 

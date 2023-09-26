@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Recover Binary Search Tree
+// URL: https://leetcode.com/problems/recover-binary-search-tree/
+
 #include <iostream>
 
 using namespace std;
@@ -53,7 +58,7 @@ void inorderTravel(TreeNode *root) {
  */
 class Solution {
 public:
-    void recoverTree(TreeNode* root) {
+    void recoverTree(TreeNode *root) {
         TreeNode *firs = nullptr;
         TreeNode *seco = nullptr;
         TreeNode *prev = nullptr;

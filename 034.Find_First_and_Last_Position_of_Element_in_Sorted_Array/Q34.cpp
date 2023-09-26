@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Find First and Last Position of Element in Sorted Array
+// URL: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 #include <iostream>
 #include <vector>
 
@@ -5,10 +10,10 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> searchRange(vector<int>& nums, int target) {
+    vector<int> searchRange(vector<int> &nums, int target) {
         vector<int> ans = {-1, -1};
 
-        for(int i=0; i<nums.size(); ++i) {
+        for(int i = 0; i < nums.size(); ++i) {
             if(nums[i] == target) {
                 if(ans[0] == -1) {
                     ans[0] = i;
@@ -16,7 +21,6 @@ public:
                 ans[1] = i;
             }
         }
-
 
         return ans;
     }

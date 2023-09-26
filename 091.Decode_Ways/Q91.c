@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Decode Ways
+// URL: https://leetcode.com/problems/decode-ways/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

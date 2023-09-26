@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Same Tree
+// URL: https://leetcode.com/problems/same-tree/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -36,7 +41,7 @@ void clearTree(struct TreeNode *root) {
  *     struct TreeNode *right;
  * };
  */
-bool isSameTree(struct TreeNode* p, struct TreeNode* q){
+bool isSameTree(struct TreeNode *p, struct TreeNode *q){
     if(p == NULL || q == NULL) {
         return p == NULL && q == NULL;
     }

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: First Missing Positive
+// URL: https://leetcode.com/problems/first-missing-positive/
+
 #include <stdio.h>
 
 /*
@@ -28,7 +33,7 @@ void swap(int *l, int *r){
     }
 }
 
-int firstMissingPositive(int* nums, int numsSize){
+int firstMissingPositive(int *nums, int numsSize){
 
     for(int i = 0; i < numsSize; ++i) {
         while(nums[i] > 0 && nums[i] <= numsSize && nums[nums[i] - 1] != nums[i]) {

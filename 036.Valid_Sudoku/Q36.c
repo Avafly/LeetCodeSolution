@@ -1,7 +1,12 @@
+
+// LeetCode Problem:
+// Title: Valid Sudoku
+// URL: https://leetcode.com/problems/valid-sudoku/
+
 #include <stdio.h>
 #include <stdbool.h>
 
-bool isValidSudoku(char** board, int boardSize, int* boardColSize){
+bool isValidSudoku(char **board, int boardSize, int *boardColSize){
     int rows[9][9] = {0};
     int cols[9][9] = {0};
     int boxes[9][9] = {0};

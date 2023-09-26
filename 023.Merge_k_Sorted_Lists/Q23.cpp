@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Merge k Sorted Lists
+// URL: https://leetcode.com/problems/merge-k-sorted-lists/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -12,21 +17,21 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-void clearList(ListNode* list) {
-    ListNode* p = list;
-    ListNode* deleteP = nullptr;
+void clearList(ListNode *list) {
+    ListNode *p = list;
+    ListNode *deleteP = nullptr;
 
-    while (p != nullptr) {
+    while(p != nullptr) {
         deleteP = p;
         p = p->next;
         delete(deleteP);
     }
 }
 
-void printList(ListNode* list) {
-    ListNode* p = list;
+void printList(ListNode *list) {
+    ListNode *p = list;
 
-    while (p != nullptr) {
+    while(p != nullptr) {
         cout << p->val << " ";
         p = p->next;
     }
@@ -35,7 +40,7 @@ void printList(ListNode* list) {
 
 class Solution {
 public:
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
+    ListNode *mergeKLists(vector<ListNode*> &lists) {
         int len = lists.size();
         if(len == 0) return nullptr;
         
@@ -46,7 +51,7 @@ public:
 
         int isFirst = 1;
 
-        for(int i=0; i<len; ++i) {
+        for(int i = 0; i < len; ++i) {
             p = lists[i];
             while(p != nullptr) {
                 nums.push_back(p->val);
@@ -57,7 +62,7 @@ public:
         if(!nums.empty()) {
             sort(nums.begin(), nums.end());
 
-            for(int i=0; i<nums.size(); ++i) {
+            for(int i = 0; i < nums.size(); ++i) {
                 if(isFirst) {
                     ans = new ListNode(nums[i]);
                     p = ans;

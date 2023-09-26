@@ -1,3 +1,7 @@
+// LeetCode Problem:
+// Title: Container With Most Water
+// URL: https://leetcode.com/problems/container-with-most-water/
+
 #include <stdio.h>
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))

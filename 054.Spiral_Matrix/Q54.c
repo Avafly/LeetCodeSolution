@@ -1,10 +1,15 @@
+
+// LeetCode Problem:
+// Title: Spiral Matrix
+// URL: https://leetcode.com/problems/spiral-matrix/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int* spiralOrder(int** matrix, int matrixSize, int* matrixColSize, int* returnSize){
+int *spiralOrder(int **matrix, int matrixSize, int *matrixColSize, int *returnSize){
     int h = matrixSize;
     int w = matrixColSize[0];
     int col = w;
@@ -89,14 +94,6 @@ int main(int argc, char **argv) {
             matrix[i][j] = i * w + j + 1;
         }
     }
-
-    /* print matrix */
-    // for(int i = 0; i < h; ++i) {
-    //     for(int j = 0; j < w; ++j) {
-    //         printf("%d ", matrix[i][j]);
-    //     }
-    //     printf("\n");
-    // }
 
     int matrixColSize[] = {w, w, w, w};
     int *returnSize = (int *)malloc(sizeof(int));

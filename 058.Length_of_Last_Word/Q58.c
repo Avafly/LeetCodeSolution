@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Length of Last Word
+// URL: https://leetcode.com/problems/length-of-last-word/
+
 #include <stdio.h>
 #include <string.h>
 

@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Partition List
+// URL: https://leetcode.com/problems/partition-list/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -58,7 +63,7 @@ ListNode *createList(const vector<int> &nums) {
  */
 class Solution {
 public:
-    ListNode* partition(ListNode* head, int x) {
+    ListNode *partition(ListNode *head, int x) {
         if(x < -100 || x > 100) return head;
         ListNode *dummy = new ListNode(0, head);
         ListNode *p = dummy;

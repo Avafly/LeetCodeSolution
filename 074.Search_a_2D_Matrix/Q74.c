@@ -1,8 +1,13 @@
+
+// LeetCode Problem:
+// Title: Search a 2D Matrix
+// URL: https://leetcode.com/problems/search-a-2d-matrix/
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
-bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target){
+bool searchMatrix(int **matrix, int matrixSize, int *matrixColSize, int target){
     int l = 0;
     int r = matrixSize * matrixColSize[0] - 1;
 

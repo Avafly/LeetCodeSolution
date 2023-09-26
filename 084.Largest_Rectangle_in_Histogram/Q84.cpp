@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Largest Rectangle in Histogram
+// URL: https://leetcode.com/problems/largest-rectangle-in-histogram/
+
 #include <iostream>
 #include <stack>
 #include <vector>
@@ -15,7 +20,7 @@ using namespace std;
 
 class Solution {
 public:
-    int largestRectangleArea(vector<int>& heights) {
+    int largestRectangleArea(vector<int> &heights) {
         int n = static_cast<int>(heights.size());
         stack<int> monoStack;
         int ans = 0;

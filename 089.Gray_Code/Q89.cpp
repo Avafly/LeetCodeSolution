@@ -1,3 +1,8 @@
+
+// LeetCode Problem:
+// Title: Gray Code
+// URL: https://leetcode.com/problems/gray-code/
+
 #include <iostream>
 #include <vector>
 using namespace std;
